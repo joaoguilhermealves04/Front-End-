@@ -1,0 +1,106 @@
+/* folha de estilo padrão */
+
+body {
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+  background-color: var(--primary-fundo);
+}
+
+h1 {
+  color: var(--primary);
+  font-size: 32px;
+}
+
+div {
+  background-color: var(--primary-segundoFundo);
+  width: 60% ;
+  Max-width: 340px; /* Lagura */
+  margin-top: 100px;
+  margin-left: auto;
+  margin-right: auto;
+
+  padding: 30px; /* Espaçamento Interno */
+  text-align: center;
+  border-radius: 10px;
+}
+
+img{
+    width: 100px;
+    border-radius: 50%;
+    border: 5px solid var(--primary-hover);
+}
+
+h2 {
+  color: #735702;
+  font-size: 20px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  margin: 0;
+}
+
+p {
+  color: var(--primary);
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  margin-bottom: 5px;
+}
+
+li a {
+  color: #ffffff;
+  background-color: var(--primary);
+  text-decoration: none;
+  display: block;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-radius: 3px;
+}
+
+li a:hover {
+  background-color: var(--primary-hover);
+}
+
+li a:active {
+  background-color: var(--primary-segundoFundo);
+}
+
+/* Formanto o id copyright */
+#copyright {
+  color: var(--primary);
+}
+
+/*Media query*/
+@media (min-width: 1280px){
+  #link-app{
+    display: none;
+  }
+}
+
+@media (max-width: 414px){
+   div{
+     margin-top: 50px;
+   }
+
+   img{
+     width: 80px;
+   }
+
+   h1{
+    font-size: 24px;
+   }
+
+   h2{
+    font-size: 16px;
+   }
+   
+}
